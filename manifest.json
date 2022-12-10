@@ -1,0 +1,47 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Brainly Answers Unlocker",
+  "description": "Answers Bypass",
+  "version": "1.0",
+  "author": "Kubaplay#6107",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ 
+        "*://brainly.com.br/*", 
+        "*://brainly.com/*", 
+        "*://brainly.in/*", 
+        "*://brainly.pl/*", 
+        "*://brainly.lat/*", 
+        "*://brainly.ph/*", 
+        "*://zadane.pl/*", 
+        "*://znanija.com/*", 
+        "*://eodev.com/*", 
+        "*://brainly.co.id/*", 
+        "*://brainly.ro/*", 
+        "*://*.nosdevoirs.fr/*",
+        "*://brainly.it/*" ],
+      "js": ["/script.js"],
+      "run_at": "document_idle"
+
+    }
+  ],
+  "host_permissions": [ 
+    "*://brainly.com.br/*",   
+    "*://brainly.com/*", 
+    "*://brainly.in/*", 
+    "*://brainly.pl/*", 
+    "*://brainly.lat/*", 
+    "*://brainly.ph/*", 
+    "*://zadane.pl/*", 
+    "*://znanija.com/*", 
+    "*://eodev.com/*", 
+    "*://brainly.co.id/*", 
+    "*://brainly.ro/*", 
+    "*://*.nosdevoirs.fr/*",
+    "*://brainly.it/*" ]
+}
